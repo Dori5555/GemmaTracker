@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemma Jenkins - Játék Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&family=Unbounded:wght@700&family=Prata:ital@1&family=Rubik+Mono+One&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gemmatracker.css">
+</head>
+<body>
+
+<div class="gemma-tracker-wrap">
+
+    <div class="gemma-doodle-layer" id="gemma-doodle-layer"></div>
+
+    <aside class="gemma-side gemma-side-left">
+        <div class="gemma-title-block">
+            <div class="gemma-title-line">
+                <span>G</span><span>e</span><span>m</span><span>m</span><span>a</span>
+            </div>
+            <div class="gemma-title-line gemma-title-line-second">
+                <span>J</span><span>e</span><span>n</span><span>k</span><span>i</span><span>n</span><span>s</span>
+            </div>
+        </div>
+
+        <nav class="gemma-year-nav">
+            <button type="button" class="gemma-home-btn" id="gemma-home-btn">Címlap</button>
+            <button type="button" class="gemma-year-btn" data-target="gemma-past">Múlt</button>
+            <button type="button" class="gemma-year-btn" data-target="gemma-current">2005/2006 tanév</button>
+        </nav>
+
+        <div class="gemma-photo-stack">
+            <figure class="gemma-photo gemma-photo-one">
+                <span class="gemma-tape"></span>
+                <img src="https://placehold.co/120x120/7daa63/ffffff?text=Kep+1" alt="Kép 1">
+            </figure>
+
+            <figure class="gemma-photo gemma-photo-two">
+                <span class="gemma-tape"></span>
+                <img src="https://placehold.co/120x120/b33727/ffffff?text=Kep+2" alt="Kép 2">
+            </figure>
+
+            <figure class="gemma-photo gemma-photo-three">
+                <span class="gemma-tape"></span>
+                <img src="https://placehold.co/120x120/5c8e48/ffffff?text=Kep+3" alt="Kép 3">
+            </figure>
+        </div>
+    </aside>
+
+    <main class="gemma-main-board">
+
+        <section class="gemma-note-view" id="gemma-note-view">
+    <div class="gemma-writing-box">
+
+                <div class="gemma-quote-text" id="gemma-quote-text"></div>
+                <span class="gemma-caret" id="gemma-caret"></span>
+            </div>
+
+            <div class="gemma-motto">
+                <div class="gemma-motto-row">
+                    <span class="gemma-motto-text1">Élet van,</span>
+                    <span class="gemma-motto-text2">halál van,</span>
+                    <span class="gemma-motto-text3">party van</span>
+                </div>
+
+                <div class="gemma-motto-row">
+                    <span class="gemma-motto-text4">Minden nap</span>
+                    <span class="gemma-motto-text5">egy új kaland</span>
+                </div>
+
+                <div class="gemma-motto-row">
+                    <span class="gemma-motto-text6">chaos, nevetés,</span>
+                    <span class="gemma-motto-text7">és semmi megállás</span>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="gemma-tracker-view" id="gemma-past">
+            <div class="gemma-tracker-head">
+                <div>
+                    <div class="gemma-section-kicker">játéklista</div>
+                    <h2>Múlt</h2>
+                </div>
+
+                <div class="gemma-filterbar">
+                    <button type="button" class="gemma-filter-btn is-active" data-filter="all">Összes</button>
+                    <button type="button" class="gemma-filter-btn" data-filter="active">Aktív</button>
+                    <button type="button" class="gemma-filter-btn" data-filter="closed">Lezárt</button>
+                    <button type="button" class="gemma-filter-btn" data-filter="stuck">Elakadt</button>
+                </div>
+            </div>
+
+            <div class="gemma-game-scroll">
+
+                <details class="gemma-cat" closed>
+                    <summary>Előtörténet</summary>
+
+                    <div class="gemma-list">
+                        <article class="gemma-item" data-status="closed">
+                            <div class="gemma-item-bg" style="background-image: url('https://placehold.co/900x300/4f7a3f/ffffff?text=Elotortenet'); background-position: center 68%;"></div>
+                            <div class="gemma-item-shade"></div>
+                            <div class="gemma-item-overlay"></div>
+
+                            <div class="gemma-status-badge">Lezárt</div>
+
+                            <div class="gemma-item-content">
+                                <h3>Hogyan kezdődött minden</h3>
+
+                                <div class="gemma-item-meta">
+                                    <div><b>Név:</b> Senki</div>
+                                    <div><b>Dátum:</b> 1987–2005</div>
+                                    <div><b>Helyszín:</b> Birmingham</div>
+                                </div>
+
+                                <a href="https://www.roxfort.frpg.hu/index.php/topic,20627.0.html" class="gemma-item-btn" target="_blank" rel="noopener noreferrer">Megnyitás</a>
+                            </div>
+                        </article>
+                    </div>
+                </details>
+
+                <details class="gemma-cat" closed>
+                    <summary>Múltbeli történések</summary>
+
+                    <div class="gemma-list">
+                        <article class="gemma-item" data-status="closed">
+                            <div class="gemma-item-bg" style="background-image: url('images/games/gems.png'); background-position: center 68%;"></div>
+                            <div class="gemma-item-shade"></div>
+                            <div class="gemma-item-overlay"></div>
+
+                            <div class="gemma-status-badge">Lezárt</div>
+
+                            <div class="gemma-item-content">
+                                <h3>Ain't No Rest For The Wicked</h3>
+
+                                <div class="gemma-item-meta">
+                                    <div><b>Név:</b> Chikara Tetsuya</div>
+                                    <div><b>Dátum:</b> 2004. augusztus vége</div>
+                                    <div><b>Helyszín:</b> Exeter</div>
+                                </div>
+
+                                <a href="https://www.roxfort.frpg.hu/index.php/topic,20847.0.html" class="gemma-item-btn" target="_blank" rel="noopener noreferrer">Megnyitás</a>
+                            </div>
+                        </article>
+
+                                           </div>
+                </details>
+
+
+            </div>
+        </section>
+
+        <section class="gemma-tracker-view" id="gemma-current">
+            <div class="gemma-tracker-head">
+                <div>
+                    <div class="gemma-section-kicker">játéklista</div>
+                    <h2>2005/2006 tanév</h2>
+                </div>
+
+                <div class="gemma-filterbar">
+                    <button type="button" class="gemma-filter-btn is-active" data-filter="all">Összes</button>
+                    <button type="button" class="gemma-filter-btn" data-filter="active">Aktív</button>
+                    <button type="button" class="gemma-filter-btn" data-filter="closed">Lezárt</button>
+                    <button type="button" class="gemma-filter-btn" data-filter="stuck">Elakadt</button>
+                </div>
+            </div>
+
+            <div class="gemma-game-scroll">
+
+                <details class="gemma-cat" closed>
+                    <summary>1. félév</summary>
+
+                    <div class="gemma-list">
+                        <article class="gemma-item" data-status="closed">
+                            <div class="gemma-item-bg" style="background-image: url('images/games/gems.png'); background-position: center 68%;"></div>
+                            <div class="gemma-item-shade"></div>
+                            <div class="gemma-item-overlay"></div>
+
+                            <div class="gemma-status-badge">Lezárt</div>
+
+                            <div class="gemma-item-content">
+                                <h3>Számolunk tíztől vissza</h3>
+
+                                <div class="gemma-item-meta">
+                                    <div><b>Név:</b> Heranoush Fletcher</div>
+                                    <div><b>Dátum:</b> 2005. szeptember 1.</div>
+                                    <div><b>Helyszín:</b> 9-es számú kupé, Roxfort Expressz</div>
+                                </div>
+
+                                <a href="https://www.roxfort.frpg.hu/index.php/topic,20096.msg126991.html#msg126991" class="gemma-item-btn" target="_blank" rel="noopener noreferrer">Megnyitás</a>
+                            </div>
+                        </article>
+
+                        <article class="gemma-item" data-status="stuck">
+                            <div class="gemma-item-bg" style="background-image: url('images/games/will1.jpg'); background-position: center 68%;"></div>
+                            <div class="gemma-item-shade"></div>
+                            <div class="gemma-item-overlay"></div>
+
+                            <div class="gemma-status-badge">Elakadt</div>
+
+                            <div class="gemma-item-content">
+                                <h3>Mai kalandok</h3>
+
+                                <div class="gemma-item-meta">
+                                    <div><b>Név:</b> William Ashford</div>
+                                    <div><b>Dátum:</b> 2005. szeptember</div>
+                                    <div><b>Helyszín:</b> Könyvtár, Roxfort</div>
+                                </div>
+
+                                <a href="https://www.roxfort.frpg.hu/index.php/topic,19924.msg127079.html#msg127079" class="gemma-item-btn" target="_blank" rel="noopener noreferrer">Megnyitás</a>
+                            </div>
+                        </article>
+
+                        <article class="gemma-item" data-status="closed">
+                            <div class="gemma-item-bg" style="background-image: url('images/games/nagyterem01.jpg'); background-position: center 68%;"></div>
+                            <div class="gemma-item-shade"></div>
+                            <div class="gemma-item-overlay"></div>
+
+                            <div class="gemma-status-badge">Lezárt</div>
+
+                            <div class="gemma-item-content">
+                                <h3>Mai kalandok</h3>
+
+                                <div class="gemma-item-meta">
+                                    <div><b>Név:</b> Mardekár asztala</div>
+                                    <div><b>Dátum:</b> 2005. szeptember</div>
+                                    <div><b>Helyszín:</b> Nagyteren, Roxfort</div>
+                                </div>
+
+                                <a href="https://www.roxfort.frpg.hu/index.php/topic,19896.msg127172.html#msg127172" class="gemma-item-btn" target="_blank" rel="noopener noreferrer">Megnyitás</a>
+                            </div>
+                        </article>
+
+
+
+                    </div>
+                </details>
+
+
+                <details class="gemma-cat" closed>
+                    <summary>Yule bál</summary>
+
+                    <div class="gemma-list">
+                        <article class="gemma-item" data-status="closed">
+                            <div class="gemma-item-bg" style="background-image: url('images/games/gems.png'); background-position: center 68%;"></div>
+                            <div class="gemma-item-shade"></div>
+                            <div class="gemma-item-overlay"></div>
+
+                            <div class="gemma-status-badge">Lezárt</div>
+
+                            <div class="gemma-item-content">
+                                <h3>Számolunk tíztől vissza</h3>
+
+                                <div class="gemma-item-meta">
+                                    <div><b>Név:</b> Connor O'Hara</div>
+                                    <div><b>Dátum:</b> 2006. január 13., 17:30-17:45 körül</div>
+                                    <div><b>Helyszín:</b> Folyosók</div>
+                                </div>
+
+                                <a href="https://www.roxfort.frpg.hu/index.php/topic,20961.msg128535.html#msg128535" class="gemma-item-btn" target="_blank" rel="noopener noreferrer">Megnyitás</a>
+                            </div>
+                        </article>
+
+
+
+
+
+                    </div>
+                </details>
+
+
+                <details class="gemma-cat" closed>
+                    <summary>2. félév</summary>
+
+                    <div class="gemma-list">
+                        <article class="gemma-item" data-status="closed">
+                            <div class="gemma-item-bg" style="background-image: url('images/games/gems.png'); background-position: center 68%;"></div>
+                            <div class="gemma-item-shade"></div>
+                            <div class="gemma-item-overlay"></div>
+
+                            <div class="gemma-status-badge">Lezárt</div>
+
+                            <div class="gemma-item-content">
+                                <h3>A szentjánosbogarak hallgatnak</h3>
+
+                                <div class="gemma-item-meta">
+                                    <div><b>Név:</b> Malachi Maddock</div>
+                                    <div><b>Dátum:</b> 2006. január 15.</div>
+                                    <div><b>Helyszín:</b> Gyengélkedő, Roxfort</div>
+                                </div>
+
+                                <a href="https://www.roxfort.frpg.hu/index.php/topic,21207.msg129057.html#msg129057" class="gemma-item-btn" target="_blank" rel="noopener noreferrer">Megnyitás</a>
+                            </div>
+                        </article>
+
+
+
+
+
+                    </div>
+                </details>
+
+
+
+            </div>
+        </section>
+
+    </main>
+
+</div>
+
+<script src="gemmatracker.js"></script>
+</body>
+</html>
