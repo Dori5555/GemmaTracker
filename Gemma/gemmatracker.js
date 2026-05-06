@@ -1,7 +1,7 @@
 const gemmaQuoteBank = [
     "Mert nincs külön olyan, hogy te meg én! Ahhoz hogy én legyek, te kellesz... Ahhoz hogy Te, meg Én",
     "Először is, ewww! Másodszor meg, ewww! Soha nem értettem, miért bolondulnak meg hirtelen az emberek. Soha nem fogok lealjasodni ilyen ösztönlény szintre, mint egyesek.",
-    "Tudod… Van valami, ami mindig is zavart veled kapcsolatban. Nem az, hogy hangos vagy, nem az, hogy nevetésből élsz, és nem is az, hogy gurkóként pattogsz a világ és önmagad között. Hanem az, hogy mintha semmit nem tennél a saját jövődért.",
+    "Van valami, ami mindig is zavart veled kapcsolatban. Nem az, hogy nevetésből élsz, és nem is az, hogy gurkóként pattogsz a világ és önmagad között. Hanem az, hogy mintha semmit nem tennél a saját jövődért.",
     "Nem a tananyag fáj nekem. Hanem az a pazarlás, amit magaddal művelsz.",
     "Mondd, Gemma, mégis meddig akarod még ezt a szánalmas bújócskát játszani?",
     "Sajnálom, Jenkins… Jövő hét szombaton válogatót tartunk. És… számítok rá, hogy ott leszel. Nem hajtóként. Fogóként.",
