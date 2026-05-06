@@ -235,6 +235,12 @@ function gemmaStartQuoteLoop() {
 
 function gemmaShowHome() {
     const noteView = document.getElementById("gemma-note-view");
+    const wrapper = document.querySelector(".gemma-tracker-wrap");
+
+    if (wrapper) {
+        wrapper.classList.add("is-home");
+        gemmaCreateDoodles();
+    }
 
     document.querySelectorAll(".gemma-tracker-view").forEach(view => {
         view.classList.remove("is-visible");
@@ -249,9 +255,15 @@ function gemmaShowHome() {
     }
 }
 
+
 function gemmaShowTracker(targetId) {
     const noteView = document.getElementById("gemma-note-view");
     const target = document.getElementById(targetId);
+    const wrapper = document.querySelector(".gemma-tracker-wrap");
+
+    if (wrapper) {
+        wrapper.classList.remove("is-home");
+    }
 
     if (!target) {
         return;
