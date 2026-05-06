@@ -119,7 +119,11 @@ const gemmaQuoteColors = [
     "#5c8e48",
     "#7daa63",
     "#b33727",
-    "#da5c00"
+    "#da5c00",
+    "#fba648",
+    "#6dbfb8",
+    "#0f9f77",
+    "#8f9c43"
 ];
 
 let gemmaQuoteTimer = null;
