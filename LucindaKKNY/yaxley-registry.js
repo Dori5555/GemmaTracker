@@ -20,7 +20,7 @@ const yaxContacts = {
     desc: 'Lassan, évek alatt engedlek be egy gondosan őrzött világba, ahol az érzelmek ritkán hangosak és talán nem is annyira mélyek, amennyire szeretném. Nehéz lenyűgözni, magasak az elvárásaim, és ugyanúgy számon tartom a hibáidat, mint bárki másnál. Viszont ha valóban eljutsz odáig, hogy a bizalmamat és a gyengédségemet megkapod, érted csendben, kérdés nélkül mennék el a legtovább. Bár egyetlen ilyen ember van, aki eddig eljutott erre a szintre...'
   },
   other: {
-    img: 'https://i.imgur.com/bpoXVQA.png',
+    img: 'https://i.imgur.com/tKBKdoO.png',
     alt: 'Egyéb',
     name: 'A céljai mögött eltűnő ember',
     desc: 'Úgy látsz te is engem, mint valakit, aki hideg, kegyetlen és túl könnyen lép át másokon, mintha minden ember csak akadály lenne az úton, igaz? Ne aggódj, sokan vannak így. Távolságtartásom gyakran felsőbbrendűségnek vagy gonoszságnak hiszed, pedig sokszor egyszerűen csak annyira a céljaimra figyelek, hogy nincs időm és ingerenciám mindenkinek megfelelni vagy mindenkit észrevenni, meg nem is akarok. Kívülről keménynek és ridegnek tűnök, miközben belül inkább egy állandóan előre néző ember vagyok, aki ritkán áll meg magyarázkodni.'
