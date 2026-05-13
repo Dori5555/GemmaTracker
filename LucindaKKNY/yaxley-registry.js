@@ -2,28 +2,28 @@ const yaxSealImage = 'https://i.imgur.com/34iDx9G.png';
 
 const yaxContacts = {
   friends: {
-    img: 'https://i.pinimg.com/736x/62/3c/75/623c7552f562b9aa51d81327b8f4b3f2.jpg',
-    alt: 'Friend',
-    name: 'Solace Barbon',
-    desc: 'Childhood acquaintance, fellow Wampus student with shared interests in ancient runes.'
+    img: 'https://i.pinimg.com/736x/eb/08/92/eb08927869dff3a572cdd9a9d892861d.jpg',
+    alt: 'Barát',
+    name: 'Közel a távolsághoz',
+    desc: 'Sosem tagadtam, hogy nem könnyű velem a barátság, nincs is sok belőle. Nehezen nyílok meg és ritkán lelkesedem látványosan, ráadásul leginkább a saját céljaim vezérelnek. Viszont különösen jól látom az emberekben a potenciált, a tehetséget és azokat az értékeket, amik elsőre nem mindenkinek tűnnek fel. Ha mégis elnyernéd a bizalmamat, barátságom csendes, visszafogott tele rengeteg elvárással, de cserébe mindent az eszembe vések.'
   },
   enemies: {
-    img: 'https://i.pinimg.com/736x/15/84/1d/15841d2133a5533c300eceb9cb7e21d3.jpg',
-    alt: 'Enemy',
-    name: 'Example Enemy',
-    desc: 'A rival from an opposing house with conflicting ideologies.'
+    img: 'https://i.pinimg.com/736x/78/7b/93/787b93d186a80ba110f6b98f050b6866.jpg',
+    alt: 'Ellenség',
+    name: 'Penge a csend mögött',
+    desc: 'Ellenségemnek lenned olyan, mintha valaki csendben figyelné minden hibádat és évekkel később is pontosan emlékezne rájuk. Nem dühből pusztítok, hanem hideg fejjel, számító pontossággal, és sosem teszek felesleges lépést. A legijesztőbb talán az, hogy amikor átgázolok rajtad, azt úgy teszem, mintha már rég eldőlt volna, hogy ez elkerülhetetlen. És ez így is van.'
   },
   loves: {
-    img: 'https://i.pinimg.com/736x/0a/0c/c8/0a0cc8eb2942193b5cd548684d75e723.jpg',
-    alt: 'Love',
-    name: 'Example Love',
-    desc: 'A complicated relationship marked by unspoken feelings and shared secrets.'
+    img: 'https://i.pinimg.com/1200x/34/7e/0a/347e0ae7706276ee4a0aea2c11ec4bd0.jpg',
+    alt: 'Szerelem',
+    name: 'Kegyetlen világból megőrzött gyengédség',
+    desc: 'Lassan, évek alatt engedlek be egy gondosan őrzött világba, ahol az érzelmek ritkán hangosak és talán nem is annyira mélyek, amennyire szeretném. Nehéz lenyűgözni, magasak az elvárásaim, és ugyanúgy számon tartom a hibáidat, mint bárki másnál. Viszont ha valóban eljutsz odáig, hogy a bizalmamat és a gyengédségemet megkapda, érted csendben, kérdés nélkül mennék el a legtovább. Bár egyetlen ilyen ember van, aki eddig eljutott erre a szintre...'
   },
   other: {
-    img: 'https://i.pinimg.com/1200x/1b/fa/6d/1bfa6d8e4fd71b9be8e901d6d8255748.jpg',
-    alt: 'Other',
-    name: 'Example Other',
-    desc: 'A mentor figure who provides guidance in times of uncertainty.'
+    img: 'https://i.pinimg.com/1200x/8c/81/ff/8c81ff72f50f7b181d38fd9b6b6fcb20.jpg',
+    alt: 'Egyéb',
+    name: 'A céljai mögött eltűnő ember',
+    desc: 'Úgy látsz te is engem, mint valakit, aki hideg, kegyetlen és túl könnyen lép át másokon, mintha minden ember csak akadály lenne az úton, igaz? Ne aggódj, sokan vannak így. Távolságtartásom gyakran felsőbbrendűségnek vagy gonoszságnak hiszed, pedig sokszor egyszerűen csak annyira a céljaimra figyelek, hogy nincs időm és ingerenciám mindenkinek megfelelni vagy mindenkit észrevenni, meg nem is akarok. Kívülről keménynek és ridegnek tűnök, miközben belül inkább egy állandóan előre néző ember vagyok, aki ritkán áll meg magyarázkodni.'
   }
 };
 
