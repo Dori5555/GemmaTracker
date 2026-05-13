@@ -1,5 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Italianno&display=swap');
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #0e1214;
+}
+
+/* Skinhez igazított scrollbar */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #4b7e8a #0e1214;
+}
+
+body::-webkit-scrollbar,
+.yaxley-registry::-webkit-scrollbar,
+.yaxley-registry-wrap::-webkit-scrollbar,
+.yax-output-code::-webkit-scrollbar,
+.yax-textarea::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+body::-webkit-scrollbar-track,
+.yaxley-registry::-webkit-scrollbar-track,
+.yaxley-registry-wrap::-webkit-scrollbar-track,
+.yax-output-code::-webkit-scrollbar-track,
+.yax-textarea::-webkit-scrollbar-track {
+  background: #0e1214;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb,
+.yaxley-registry::-webkit-scrollbar-thumb,
+.yaxley-registry-wrap::-webkit-scrollbar-thumb,
+.yax-output-code::-webkit-scrollbar-thumb,
+.yax-textarea::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #83adb5, #4b7e8a);
+  border-radius: 10px;
+  border: 2px solid #0e1214;
+}
+
+body::-webkit-scrollbar-thumb:hover,
+.yaxley-registry::-webkit-scrollbar-thumb:hover,
+.yaxley-registry-wrap::-webkit-scrollbar-thumb:hover,
+.yax-output-code::-webkit-scrollbar-thumb:hover,
+.yax-textarea::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #a2c3c9, #5e96a3);
+}
+
+.yaxley-registry {
+  box-sizing: border-box;
+}
+
 .yaxley-registry * {
   box-sizing: border-box;
   margin: 0;
@@ -17,6 +71,7 @@
   --yax-border-mid: rgba(131, 173, 181, 0.4);
   --yax-text: #c8d8da;
   --yax-text-dim: #7a9499;
+
   width: 600px;
   max-width: 100%;
   min-height: 400px;
@@ -88,7 +143,9 @@
 }
 
 @keyframes yax-write-in {
-  to { opacity: 1; }
+  to {
+    opacity: 1;
+  }
 }
 
 .yax-main-title span:nth-child(1) { animation-delay: 0.05s; }
@@ -393,6 +450,9 @@
   white-space: pre-wrap;
   word-break: break-word;
   user-select: text;
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--yax-teal-dark) var(--yax-bg);
 }
 
 .yax-copy-status {
@@ -429,8 +489,12 @@
   overflow: hidden;
   border: 1px solid rgba(131, 173, 181, 0.26);
   border-radius: 4px;
-  background: radial-gradient(circle at 50% 18%, rgba(131, 173, 181, 0.08), transparent 32%), radial-gradient(circle at 50% 88%, rgba(75, 126, 138, 0.1), transparent 28%), linear-gradient(180deg, #141a1d 0%, #0e1214 100%);
-  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.48), inset 0 0 34px rgba(131, 173, 181, 0.05), inset 0 0 70px rgba(0, 0, 0, 0.5);
+  background: radial-gradient(circle at 50% 18%, rgba(131, 173, 181, 0.08), transparent 32%),
+              radial-gradient(circle at 50% 88%, rgba(75, 126, 138, 0.1), transparent 28%),
+              linear-gradient(180deg, #141a1d 0%, #0e1214 100%);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.48),
+              inset 0 0 34px rgba(131, 173, 181, 0.05),
+              inset 0 0 70px rgba(0, 0, 0, 0.5);
   font-family: 'Libre Baskerville', Georgia, serif;
   color: #83adb5;
 }
