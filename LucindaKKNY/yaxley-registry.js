@@ -14,7 +14,7 @@ const yaxContacts = {
     desc: 'Ellenségemnek lenned olyan, mintha valaki csendben figyelné minden hibádat és évekkel később is pontosan emlékezne rájuk. Nem dühből pusztítok, hanem hideg fejjel, számító pontossággal, és sosem teszek felesleges lépést. A legijesztőbb talán az, hogy amikor átgázolok rajtad, azt úgy teszem, mintha már rég eldőlt volna, hogy ez elkerülhetetlen. És ez így is van.'
   },
   loves: {
-    img: 'https://i.imgur.com/bFurxbW.png',
+    img: 'https://i.pinimg.com/1200x/34/7e/0a/347e0ae7706276ee4a0aea2c11ec4bd0.jpg',
     alt: 'Szerelem',
     name: 'Kegyetlen világból megőrzött gyengédség',
     desc: 'Lassan, évek alatt engedlek be egy gondosan őrzött világba, ahol az érzelmek ritkán hangosak és talán nem is annyira mélyek, amennyire szeretném. Nehéz lenyűgözni, magasak az elvárásaim, és ugyanúgy számon tartom a hibáidat, mint bárki másnál. Viszont ha valóban eljutsz odáig, hogy a bizalmamat és a gyengédségemet megkapod, érted csendben, kérdés nélkül mennék el a legtovább. Bár egyetlen ilyen ember van, aki eddig eljutott erre a szintre...'
@@ -57,16 +57,89 @@ function buildYaxleyLetterMarkup(safeTitle, safeMessage, safeSignature) {
   return '<div class="yax-letter"><div class="yax-letter-title">' + safeTitle + '</div><div class="yax-letter-ornament"><div class="yax-letter-ornament-line"></div><div class="yax-letter-ornament-diamond"></div><div class="yax-letter-ornament-line"></div></div><div class="yax-letter-body">' + safeMessage + '</div><div class="yax-letter-signature">' + safeSignature + '</div><div class="yax-letter-ornament"><div class="yax-letter-ornament-line"></div><div class="yax-letter-ornament-diamond"></div><div class="yax-letter-ornament-line"></div></div><div class="yax-letter-footer"><img class="yax-letter-seal" src="' + yaxSealImage + '" alt="Yaxley Seal"><div class="yax-letter-footer-text">Yaxley - est. 1620</div></div></div>';
 }
 
-function generateYaxleyLetter() {
-  const title = document.getElementById('yaxLetterTitle').value.trim();
-  const message = document.getElementById('yaxLetterMessage').value.trim();
-  const signature = document.getElementById('yaxLetterSignature').value.trim();
+function getYaxleyLetterFields() {
+  return {
+    title: {
+      element: document.getElementById('yaxLetterTitle'),
+      label: 'a cím'
+    },
+    message: {
+      element: document.getElementById('yaxLetterMessage'),
+      label: 'az üzenet'
+    },
+    signature: {
+      element: document.getElementById('yaxLetterSignature'),
+      label: 'az aláírás'
+    }
+  };
+}
 
-  if (!title || !message || !signature) {
-    alert('Kérlek, töltsd ki az összes mezőt!');
+function getMissingYaxleyFields(fields) {
+  return Object.keys(fields).filter(key => {
+    const field = fields[key];
+    return !field.element || !field.element.value.trim();
+  });
+}
+
+function hideYaxleyFormMessage() {
+  const messageBox = document.getElementById('yaxFormMessage');
+  if (!messageBox) return;
+
+  messageBox.textContent = '';
+  messageBox.classList.remove('active');
+}
+
+function clearYaxleyFieldHighlights(fields) {
+  Object.keys(fields).forEach(key => {
+    if (fields[key].element) fields[key].element.classList.remove('yax-field-error');
+  });
+}
+
+function showYaxleyFormMessage(missingKeys, fields) {
+  const messageBox = document.getElementById('yaxFormMessage');
+  const missingLabels = missingKeys.map(key => fields[key].label).join(', ');
+
+  clearYaxleyFieldHighlights(fields);
+
+  missingKeys.forEach(key => {
+    if (fields[key].element) fields[key].element.classList.add('yax-field-error');
+  });
+
+  if (messageBox) {
+    messageBox.textContent = 'A bagoly nem indulhat el, mert hiányzik: ' + missingLabels + '.';
+    messageBox.classList.add('active');
+  }
+
+  const firstMissing = fields[missingKeys[0]];
+  if (firstMissing && firstMissing.element) firstMissing.element.focus();
+}
+
+function bindYaxleyValidationEvents() {
+  const fields = getYaxleyLetterFields();
+
+  Object.keys(fields).forEach(key => {
+    const field = fields[key];
+    if (!field.element) return;
+
+    field.element.addEventListener('input', () => {
+      if (field.element.value.trim()) field.element.classList.remove('yax-field-error');
+      if (!getMissingYaxleyFields(fields).length) hideYaxleyFormMessage();
+    });
+  });
+}
+
+function generateYaxleyLetter() {
+  const fields = getYaxleyLetterFields();
+  const missingFields = getMissingYaxleyFields(fields);
+
+  if (missingFields.length) {
+    showYaxleyFormMessage(missingFields, fields);
     return;
   }
 
+  const title = fields.title.element.value.trim();
+  const message = fields.message.element.value.trim();
+  const signature = fields.signature.element.value.trim();
   const safeTitle = escapeYaxleyHTML(title);
   const safeMessage = escapeYaxleyHTML(message);
   const safeSignature = escapeYaxleyHTML(signature);
@@ -76,6 +149,8 @@ function generateYaxleyLetter() {
   const outputPreview = document.getElementById('yaxOutputPreview');
   const copyStatus = document.getElementById('yaxCopyStatus');
 
+  clearYaxleyFieldHighlights(fields);
+  hideYaxleyFormMessage();
   outputCode.value = letterHTML;
   outputPreview.innerHTML = letterMarkup;
   copyStatus.textContent = '';
@@ -113,4 +188,11 @@ function fallbackCopyYaxleyLetterCode(output, status) {
   } catch (error) {
     status.textContent = 'Nem sikerült automatikusan másolni. Jelöld ki kézzel.';
   }
+}
+
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', bindYaxleyValidationEvents);
+} else {
+  bindYaxleyValidationEvents();
 }
