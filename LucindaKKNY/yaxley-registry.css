@@ -392,149 +392,100 @@
 }
 
 /* Letter Styles */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Italianno&display=swap');
+
 .yax-letter {
-  max-width: 500px;
-  min-height: 700px;
-  margin: 0 auto;
-  padding: 42px 42px 20px;
+  background: linear-gradient(to bottom, #f4e8d0 0%, #e8dcc4 100%);
+  padding: 30px 40px 24px;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3), inset 0 0 60px rgba(139, 115, 85, 0.1);
   position: relative;
-  overflow: hidden;
-  border-radius: 6px;
-  background:
-    radial-gradient(circle at 50% 16%, rgba(131, 173, 181, 0.08), transparent 34%),
-    radial-gradient(circle at 50% 92%, rgba(75, 126, 138, 0.10), transparent 30%),
-    linear-gradient(180deg, #141a1d 0%, #0e1214 100%);
-  border: 1px solid rgba(131, 173, 181, 0.26);
-  box-shadow:
-    0 18px 45px rgba(0, 0, 0, 0.48),
-    inset 0 0 42px rgba(131, 173, 181, 0.05),
-    inset 0 0 90px rgba(0, 0, 0, 0.5);
-  font-family: 'Libre Baskerville', Georgia, serif;
-  color: #83adb5;
+  font-family: 'Libre Baskerville', serif;
+  color: #3a2f28;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .yax-letter::before {
   content: '';
   position: absolute;
-  inset: 12px;
-  border: 1px solid rgba(75, 126, 138, 0.45);
-  box-shadow:
-    inset 0 0 24px rgba(75, 126, 138, 0.12),
-    0 0 18px rgba(75, 126, 138, 0.08);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(139, 115, 85, 0.03) 1px, rgba(139, 115, 85, 0.03) 2px);
   pointer-events: none;
   border-radius: 4px;
 }
 
-.yax-letter::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(131, 173, 181, 0.018) 2px, rgba(131, 173, 181, 0.018) 3px),
-    radial-gradient(circle at 14% 18%, rgba(255, 255, 255, 0.035), transparent 13%),
-    radial-gradient(circle at 84% 78%, rgba(255, 255, 255, 0.025), transparent 15%);
-  pointer-events: none;
-  mix-blend-mode: screen;
-}
-
 .yax-letter-title {
-  position: relative;
-  z-index: 1;
   font-family: 'Italianno', cursive;
-  font-size: 42px;
-  color: #4b7e8a;
+  font-size: 32px;
+  color: #4b3621;
   text-align: center;
   margin-bottom: 18px;
-  letter-spacing: 0.08em;
-  text-shadow: 0 0 20px rgba(75, 126, 138, 0.35);
+  letter-spacing: 0.06em;
 }
 
 .yax-letter-ornament {
-  position: relative;
-  z-index: 1;
   display: flex;
   align-items: center;
   gap: 12px;
-  margin: 16px 0 24px;
-}
-
-.yax-letter-ornament:last-of-type {
-  margin: 22px 0 10px;
+  margin: 16px 0;
 }
 
 .yax-letter-ornament-line {
   flex: 1;
   height: 1px;
-  background: linear-gradient(to right, transparent, rgba(75, 126, 138, 0.85), transparent);
+  background: linear-gradient(to right, transparent, rgba(75, 54, 33, 0.3), transparent);
 }
 
 .yax-letter-ornament-diamond {
-  width: 7px;
-  height: 7px;
-  border: 1px solid #4b7e8a;
+  width: 6px;
+  height: 6px;
+  border: 1px solid #6b5644;
   transform: rotate(45deg);
-  box-shadow: 0 0 8px rgba(75, 126, 138, 0.45);
 }
 
 .yax-letter-body {
-  position: relative;
-  z-index: 1;
-  min-height: 360px;
-  font-size: 12px;
-  line-height: 1.9;
+  font-size: 11px;
+  line-height: 1.8;
   text-align: justify;
   white-space: pre-wrap;
-  color: #83adb5;
-  margin-bottom: 0;
-  text-shadow: 0 0 10px rgba(131, 173, 181, 0.12);
+  margin-bottom: 16px;
 }
 
 .yax-letter-signature {
-  position: relative;
-  z-index: 1;
   font-family: 'Italianno', cursive;
-  font-size: 30px;
-  color: #83adb5;
+  font-size: 24px;
+  color: #4b3621;
   letter-spacing: 0.06em;
-  text-align: center;
-  line-height: 1;
-  margin: 0 0 4px;
-  text-shadow: 0 0 14px rgba(131, 173, 181, 0.2);
+  text-align: right;
+  margin-bottom: 20px;
 }
 
 .yax-letter-footer {
-  position: relative;
-  z-index: 1;
   text-align: center;
-  margin-top: 4px;
-  padding-top: 4px;
-  border-top: none;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(75, 54, 33, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2px;
+  gap: 10px;
 }
 
 .yax-letter-seal {
-  width: 128px;
-  height: 128px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
-  opacity: 0.68;
-  mix-blend-mode: screen;
-  filter:
-    sepia(1)
-    hue-rotate(140deg)
-    saturate(1.2)
-    brightness(0.82)
-    contrast(1.25)
-    drop-shadow(0 0 10px rgba(75, 126, 138, 0.2));
+  opacity: 0.9;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
 .yax-letter-footer-text {
   font-family: 'Italianno', cursive;
   font-size: 14px;
-  color: #4b7e8a;
-  letter-spacing: 0.08em;
-  line-height: 1;
-  margin-top: -4px;
+  color: #6b5644;
+  letter-spacing: 0.06em;
 }
