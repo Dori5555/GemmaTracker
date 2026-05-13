@@ -144,13 +144,10 @@ function generateYaxleyLetter() {
 
 .yax-letter-footer {
   text-align: center;
-  margin-top: 20px;
-  padding-top: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-}
+  }
 
 .yax-letter-seal {
   width: 120px;
