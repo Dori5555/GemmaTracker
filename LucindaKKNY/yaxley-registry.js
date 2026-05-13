@@ -146,7 +146,6 @@ function generateYaxleyLetter() {
   text-align: center;
   margin-top: 20px;
   padding-top: 16px;
-  border-top: 1px solid rgba(75, 126, 138, 0.42);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -181,13 +180,13 @@ function generateYaxleyLetter() {
 
   <div class="yax-letter-body">${safeMessage}</div>
 
-  <div class="yax-letter-ornament">
+  <div class="yax-letter-signature">${safeSignature}</div>
+
+<div class="yax-letter-ornament">
     <div class="yax-letter-ornament-line"></div>
     <div class="yax-letter-ornament-diamond"></div>
     <div class="yax-letter-ornament-line"></div>
   </div>
-
-  <div class="yax-letter-signature">${safeSignature}</div>
 
   <div class="yax-letter-footer">
     <img class="yax-letter-seal" src="${yaxSealImage}" alt="Yaxley Seal">
