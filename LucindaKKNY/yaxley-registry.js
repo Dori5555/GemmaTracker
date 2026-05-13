@@ -154,8 +154,8 @@ function generateYaxleyLetter() {
 }
 
 .yax-letter-seal {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   object-fit: contain;
   opacity: 0.9;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
