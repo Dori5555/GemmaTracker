@@ -62,7 +62,7 @@ function generateYaxleyLetter() {
   const safeMessage = escapeYaxleyHTML(message);
   const safeSignature = escapeYaxleyHTML(signature);
 
-  const letterHTML = `[center][html]<style>
+  const letterHTML = `<style>
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Italianno&display=swap');
 
 .yax-letter {
@@ -194,4 +194,3 @@ function generateYaxleyLetter() {
   document.getElementById('yaxOutputCode').textContent = letterHTML;
   document.getElementById('yaxInlineOutput').classList.add('active');
 }
-[/html][/center]
