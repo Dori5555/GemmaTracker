@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucinda Yaxley - Kapcsolatok</title>
+  <link rel="stylesheet" href="yaxley-registry.css">
+</head>
+<body>
+
+<div class="yaxley-registry">
+  <div class="yaxley-registry-wrap">
+    <div class="yax-header">
+      <div class="yax-title-section">
+        <div class="yax-main-title">
+          <span>L</span><span>u</span><span>c</span><span>i</span><span>n</span><span>d</span><span>a</span><span style="animation:none!important;opacity:0!important;">q</span><span>Y</span><span>a</span><span>x</span><span>l</span><span>e</span><span>y</span> <span>-</span> <span>K</span><span>a</span><span>p</span><span>c</span><span>s</span><span>o</span><span>l</span><span>a</span><span>t</span><span>o</span><span>k</span>
+        </div>
+      </div>
+      <div class="yax-crown-wrap">
+        <img class="yax-crown-img" src="https://i.pinimg.com/originals/d0/5f/3c/d05f3c5f52f09df0d993b07eec474531.gif" alt="Crown">
+        <div class="yax-crown-caption">The Crown</div>
+      </div>
+    </div>
+
+    <div class="yax-ornament">
+      <div class="yax-ornament-line"></div>
+      <div class="yax-ornament-diamond"></div>
+      <div class="yax-ornament-line"></div>
+    </div>
+
+    <div class="yax-section-title">Kapcsolatok</div>
+
+    <div class="yax-contact-tabs">
+      <button class="yax-contact-tab active" onclick="showYaxContact('friends', this)">Friends</button>
+      <button class="yax-contact-tab" onclick="showYaxContact('enemies', this)">Enemies</button>
+      <button class="yax-contact-tab" onclick="showYaxContact('loves', this)">Loves</button>
+      <button class="yax-contact-tab" onclick="showYaxContact('other', this)">Other</button>
+    </div>
+
+    <div class="yax-contact-display" id="yaxContactDisplay">
+      <div class="yax-relation-item">
+        <img class="yax-relation-avatar" id="yaxContactImg" src="https://i.pinimg.com/736x/62/3c/75/623c7552f562b9aa51d81327b8f4b3f2.jpg" alt="Friend">
+        <div class="yax-relation-info">
+          <div class="yax-relation-name" id="yaxContactName">Solace Barbon</div>
+          <div class="yax-relation-desc" id="yaxContactDesc">Childhood acquaintance, fellow Wampus student with shared interests in ancient runes.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="yax-ornament">
+      <div class="yax-ornament-line"></div>
+      <div class="yax-ornament-diamond"></div>
+      <div class="yax-ornament-line"></div>
+    </div>
+
+    <div class="yax-generator-section">
+      <div class="yax-section-title">Levél Generátor</div>
+
+      <div class="yax-input-group">
+        <label class="yax-input-label">Cím</label>
+        <input type="text" class="yax-input" id="yaxLetterTitle" placeholder="Add meg a levél címét...">
+      </div>
+
+      <div class="yax-input-group">
+        <label class="yax-input-label">Üzenet</label>
+        <textarea class="yax-textarea" id="yaxLetterMessage" placeholder="Írd meg az üzenetet..."></textarea>
+      </div>
+
+      <div class="yax-input-group">
+        <label class="yax-input-label">Aláírás</label>
+        <input type="text" class="yax-input" id="yaxLetterSignature" placeholder="Aláírás...">
+      </div>
+
+      <button class="yax-gen-button" onclick="generateYaxleyLetter()">HTML Kód Generálása</button>
+
+      <div class="yax-inline-output" id="yaxInlineOutput">
+        <div class="yax-output-header">
+          <div class="yax-output-title">Generált HTML Kód</div>
+        </div>
+        <div class="yax-output-code" id="yaxOutputCode"></div>
+      </div>
+    </div>
+
+    <div class="yax-footer">Yaxley · est. 1620</div>
+  </div>
+</div>
+
+<script src="yaxley-registry.js"></script>
+
+</body>
+</html>
