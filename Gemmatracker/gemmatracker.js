@@ -78,7 +78,13 @@ const gemmaQuoteBank = [
     "Mert mióta megcsókoltalak, nekem más sem jár a fejemben, csak te…",
     "Hiányoztál… Nagyon-nagyon…",
     "A kést talán eláshatod, maradványait elszórhatod, de a végzeted egyszer utol fog érni, kisasszony.",
-    "Énekelsz nekem?"
+    "Énekelsz nekem?",
+    "A legsúlyosabb átkokat nem vessző szülte, nem pálca rótta. Nagyobb igék nőnek a vér alatt, hol néma szájban bűn marad. Ezen átok nem kézből ered, nem tűzből, nem haragból, nem varázsból van.",
+    "Ezen átkot holt szeme veti reád, és álmodba jár, mert Archie neve nem a földben alszik. Fekete Nap sír csontjai felett, késed titkát hiába takarja avar és lomb.", 
+    "Az éj pedig jő reád, nem egyszer, hanem legalább százszor. Látod őt majd vízben, vérben, gyertyalángban és tükrök mélyén. Hallod nevét, pedig a szél se rebben.",
+    "A holtak nem üldöznek Téged. De magad teszed. Elástad, elhantoltad, de nem temetted el a lelket. És míg a bűn nyelved alatt lapul, és igaz szó nem talál kaput, addig Archibald visszajár.",
+    "Tudom… Régóta kísértenek ezek… És fognak is. De az átok nem erősebb, mint a Jenkins-eskü. Amíg az él, mindannyian saját átkaink rabjai vagyunk. És leszünk is...",
+    "Talán mintha néha-néha mégis hallani vélted volna azt a gyönyörű tenort, amit aznap éjjel. De soha többet nem jött el hozzád. Se megátkozni. Se megvigasztalni. Se elringatni. Se magával vinni egy más országba."
 ];
 
 const gemmaDoodleImages = [
