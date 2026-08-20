@@ -84,7 +84,10 @@ const gemmaQuoteBank = [
     "Az éj pedig jő reád, nem egyszer, hanem legalább százszor. Látod őt majd vízben, vérben, gyertyalángban és tükrök mélyén. Hallod nevét, pedig a szél se rebben.",
     "A holtak nem üldöznek Téged. De magad teszed. Elástad, elhantoltad, de nem temetted el a lelket. És míg a bűn nyelved alatt lapul, és igaz szó nem talál kaput, addig Archibald visszajár.",
     "Tudom… Régóta kísértenek ezek… És fognak is. De az átok nem erősebb, mint a Jenkins-eskü. Amíg az él, mindannyian saját átkaink rabjai vagyunk. És leszünk is...",
-    "Talán mintha néha-néha mégis hallani vélted volna azt a gyönyörű tenort, amit aznap éjjel. De soha többet nem jött el hozzád. Se megátkozni. Se megvigasztalni. Se elringatni. Se magával vinni egy más országba."
+    "Talán mintha néha-néha mégis hallani vélted volna azt a gyönyörű tenort, amit aznap éjjel. De soha többet nem jött el hozzád. Se megátkozni. Se megvigasztalni. Se elringatni. Se magával vinni egy más országba.",
+    "Valahogy mégis újra meg újra Gemma szemeinél kötött ki, mintha az elmúlt egy hónap valamennyi hiányérzete egyszerre követelné rajta az elmaradt pillantásokat",
+    "Már nem Mr. O'Hara állt Miss Jenkins előtt. Csak Connor volt. És előtte Gemma.",
+    "Örültél, hogy megismerted és lehetőséged volt ilyen mélységben beszélgetni vele."
 ];
 
 const gemmaDoodleImages = [
