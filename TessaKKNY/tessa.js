@@ -5,27 +5,27 @@ var tessaRelations = {
   friend:{
     color:"#f69f09", glow:"rgba(246,159,9,.3)",
     icon:'<svg viewBox="0 0 24 24"><circle cx="9" cy="12" r="6"></circle><circle cx="15" cy="12" r="6"></circle></svg>',
-    text:"A barátság nálam olyan, mint egy jól hangolt duett — nem kell minden hangot leírni hozzá, elég, ha tudjuk, mikor jön be a másik szólam."
+    text:"Melletted a csend sem olyan üres. Olyan, mintha két dallam néha csak egymás mellett szólna, és egyiknek sem kellene hangosabbnak lennie a másiknál. Talán éppen ezért érzi úgy, hogy melletted nem kell elrejtenie magát."
   },
   family:{
     color:"#2f6b3f", glow:"rgba(47,107,63,.32)",
     icon:'<svg viewBox="0 0 24 24"><path d="M12 2 L7 9 H9.5 L5 15 H19 L14.5 9 H17 Z"></path><path d="M11 15 V20"></path><path d="M13 15 V20"></path><path d="M9 20 H15"></path></svg>',
-    text:"A családom nekem az alaphang — az a hang, amihez minden más dallamot visszahangolok, ha elvesztem az irányt."
+    text:"Te vagy az az alaphang, amit akkor is felismer, amikor már minden más idegenné válik. Valami régi és ismerős, amihez minden más dallamot hangol, ha elveszíti az irányt - amihez ösztönösen visszatalál. Nem kell mindig közel lenned ahhoz, hogy tudja, hol vagy. Vannak hangok, amelyeket az ember akkor is hall, amikor már csak emlékezetből szólnak."
   },
   enemy:{
     color:"#e1382a", glow:"rgba(225,56,42,.3)",
     icon:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><path d="M12 4 L10 10 L14 12 L9 20"></path></svg>',
-    text:"Vannak disszonanciák, amiket sosem oldok fel — nem mert nem tudnám, hanem mert néhány feszültségre szükség van, hogy halljam, ki vagyok."
+    text:"Van kettőtök között van egy hang. Egy hang, mely disszonáns. Nem feltétlenül akarod feloldani, talán csak megtanultad, hogy néha a disszonancia is része annak, amit egymásból hallotok. Vagy talán csak néhány feszültségre szükség van, hogy hallja, ki is valójában. Vagy talán ez a befejezetlen hang, amelyet egyikőtök sem akar újra megszólaltatni. Mégis ott marad valahol kettőtök között."
   },
   love:{
     color:"#7a2748", glow:"rgba(122,39,72,.32)",
     icon:'<svg viewBox="0 0 24 24"><path d="M12 20 C4 14 3 8 8 6 C10.5 5 12 7 12 8 C12 7 13.5 5 16 6 C21 8 20 14 12 20 Z"></path></svg>',
-    text:"Ha valakit szeretek, a dallam magától jön — nem kell hozzá papír, csak idő, hogy elhiggyem, ez nem fog megint kicsúszni a kezemből."
+    text:"Melletted mintha lassabban születne meg minden dallam. Nem siet vele, előbb meg kell tanulnia elhinni, hogy ami szépen szól, annak nem feltétlenül kell egyszer csak elhallgatnia. Talán nem meri még teljesen eljátszani, de talán már nem is szeretné elhallgattatni többet."
   },
   other:{
     color:"#9fd1e8", glow:"rgba(159,209,232,.3)",
     icon:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"></circle></svg>',
-    text:"Nem minden kapcsolatnak kell címkét adni. Néhányat inkább rögtönzésnek hívok — még nem tudom, merre tart, de szívesen followolom tovább."
+    text:"Kettőtök között valami lassan formálódó dallam maradt, amit még egyikőtök sem tud igazán elnevezni. Van közöttetek valami nehezen megfogható, amit egyikőtök sem próbál igazán megfejteni. Talán nem is kell, elég, ha tovább szól."
   }
 };
 
@@ -54,15 +54,15 @@ tessaLoadRelation("friend");
 
 /* ================= ZENEDARABOK ================= */
 var tessaPieces = [
-  { key:"nocturne", name:"Nocturne a hallgatás óráiban",      mood:"calm",       notes:["whole","half","quarter"] },
-  { key:"etud1",    name:"Etűd a szavak között",              mood:"anxious",    notes:["eighth","eighth","quarter"] },
-  { key:"keringo",  name:"Keringő kölcsönfényben",            mood:"romantic",   notes:["quarter","eighth","half"] },
-  { key:"elegia",   name:"Elégia a ki nem mondott névért",    mood:"mourning",   notes:["whole","whole","half"] },
-  { key:"prelud",   name:"Prelúdium a megbocsátáshoz",        mood:"hopeful",    notes:["quarter","eighth","quarter"] },
+  { key:"nocturne", name:"Nocturne egy távoli csillagfényhez",      mood:"calm",       notes:["whole","half","quarter"] },
+  { key:"etud1",    name:"Intermezzo egy félbehagyott mondathoz",              mood:"anxious",    notes:["eighth","eighth","quarter"] },
+  { key:"keringo",  name:"Keringő két halvány fény között",            mood:"romantic",   notes:["quarter","eighth","half"] },
+  { key:"elegia",   name:"Elégia a név mögött maradt csendhez",    mood:"mourning",   notes:["whole","whole","half"] },
+  { key:"prelud",   name:"Prelúdium a bocsánat első hangjához",        mood:"hopeful",    notes:["quarter","eighth","quarter"] },
   { key:"altato",   name:"Altató egy nyugtalan szívnek",      mood:"comfort",    notes:["half","whole","half"] },
-  { key:"fanfar",   name:"Fanfár egy váratlan szövetségesnek",mood:"triumphant", notes:["eighth","eighth","eighth"] },
-  { key:"etud2",    name:"Etűd a csendben",                   mood:"distant",    notes:["whole","half","whole"] },
-  { key:"duett",    name:"Duett két árnyéknak",                mood:"nostalgic", notes:["half","quarter","half"] }
+  { key:"fanfar",   name:"Rapszódia egy váratlan szövetségnek",mood:"triumphant", notes:["eighth","eighth","eighth"] },
+  { key:"etud2",    name:"Fantázia a csend peremén",                   mood:"distant",    notes:["whole","half","whole"] },
+  { key:"duett",    name:"Duett két csillag árnyékában",                mood:"nostalgic", notes:["half","quarter","half"] }
 ];
 
 function tessaNoteClass(value){
