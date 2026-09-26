@@ -59,10 +59,10 @@ var tessaPieces = [
   { key:"keringo",  name:"Keringő két halvány fény között",            mood:"romantic",   notes:["quarter","eighth","half"] },
   { key:"elegia",   name:"Elégia a név mögött maradt csendhez",    mood:"mourning",   notes:["whole","whole","half"] },
   { key:"prelud",   name:"Prelúdium a bocsánat első hangjához",        mood:"hopeful",    notes:["quarter","eighth","quarter"] },
-  { key:"altato",   name:"Altató egy nyugtalan szívnek",      mood:"comfort",    notes:["half","whole","half"] },
+  { key:"altato",   name:"Altató a hajnal előtti órákhoz",      mood:"comfort",    notes:["half","whole","half"] },
   { key:"fanfar",   name:"Rapszódia egy váratlan szövetségnek",mood:"triumphant", notes:["eighth","eighth","eighth"] },
   { key:"etud2",    name:"Fantázia a csend peremén",                   mood:"distant",    notes:["whole","half","whole"] },
-  { key:"duett",    name:"Duett két csillag árnyékában",                mood:"nostalgic", notes:["half","quarter","half"] }
+  { key:"duett",    name:"Arietta két csillag árnyékában",                mood:"nostalgic", notes:["half","quarter","half"] }
 ];
 
 function tessaNoteClass(value){
