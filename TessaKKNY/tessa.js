@@ -15,12 +15,12 @@ var tessaRelations = {
   enemy:{
     color:"#e1382a", glow:"rgba(225,56,42,.3)",
     icon:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><path d="M12 4 L10 10 L14 12 L9 20"></path></svg>',
-    text:"Van kettőtök között van egy hang. Egy hang, mely disszonáns. Nem feltétlenül akarod feloldani, talán csak megtanultad, hogy néha a disszonancia is része annak, amit egymásból hallotok. Vagy talán csak néhány feszültségre szükség van, hogy hallja, ki is valójában. Vagy talán ez a befejezetlen hang, amelyet egyikőtök sem akar újra megszólaltatni. Mégis ott marad valahol kettőtök között."
+    text:"Van kettőtök között egy hang, mely disszonáns. Nem feltétlenül akarod feloldani, talán csak megtanultad, hogy néha a disszonancia is része annak, amit egymásból hallotok. Vagy talán ez egy befejezetlen hang, amelyet egyikőtök sem akar újra megszólaltatni. Mégis ott marad valahol kettőtök között."
   },
   love:{
     color:"#7a2748", glow:"rgba(122,39,72,.32)",
     icon:'<svg viewBox="0 0 24 24"><path d="M12 20 C4 14 3 8 8 6 C10.5 5 12 7 12 8 C12 7 13.5 5 16 6 C21 8 20 14 12 20 Z"></path></svg>',
-    text:"Melletted mintha lassabban születne meg minden dallam. Nem siet vele, előbb meg kell tanulnia elhinni, hogy ami szépen szól, annak nem feltétlenül kell egyszer csak elhallgatnia. Talán nem meri még teljesen eljátszani, de talán már nem is szeretné elhallgattatni többet."
+    text:"Melletted mintha lassabban születne meg minden dallam. Nem siet vele, előbb meg kell tanulnia elhinni, hogy ami szépen szól, annak nem feltétlenül kell egyszer csak véget érnie. Talán nem meri még teljesen eljátszani, de talán már nem is szeretné elhallgattatni többet."
   },
   other:{
     color:"#9fd1e8", glow:"rgba(159,209,232,.3)",
