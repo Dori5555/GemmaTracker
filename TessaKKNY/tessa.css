@@ -1,0 +1,283 @@
+.tessaWrap *{box-sizing:border-box;margin:0;padding:0;}
+.tessaWrap{
+  --tessa-paper:#07090c;
+  --tessa-paper2:#0c0f12;
+  --tessa-text:#ece6da;
+  --tessa-dim:rgba(236,230,218,.6);
+  --tessa-gold:#f69f09;
+  --tessa-orange:#ed6721;
+  --tessa-brass:#b8945d;
+  --tessa-line:rgba(255,255,255,.09);
+  max-width:640px;
+  margin:24px auto;
+  font-family:"Cormorant Garamond",Georgia,serif;
+  color:var(--tessa-text);
+}
+
+.tessaCard{
+  position:relative;
+  background:radial-gradient(circle at 88% -8%,rgba(237,103,33,.10),transparent 46%),radial-gradient(circle at 4% 108%,rgba(246,159,9,.06),transparent 42%),var(--tessa-paper);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:6px 6px 16px 16px;
+  padding:20px 22px 22px;
+  margin-bottom:20px;
+  box-shadow:0 18px 40px rgba(0,0,0,.45);
+  overflow:hidden;
+}
+.tessaCard::before{
+  content:"";
+  position:absolute;inset:0;
+  pointer-events:none;
+  opacity:.08;
+  background-image:radial-gradient(rgba(255,255,255,.2) .7px,transparent .8px);
+  background-size:9px 9px;
+  mix-blend-mode:soft-light;
+}
+
+.tessaEyebrow{
+  font-family:"Cormorant Garamond",serif;
+  font-size:10px;
+  letter-spacing:.24em;
+  text-transform:uppercase;
+  color:var(--tessa-orange);
+  margin-bottom:2px;
+}
+.tessaHeading{
+  font-family:"Lavishly Yours",cursive;
+  font-size:30px;
+  line-height:1;
+  color:var(--tessa-gold);
+  text-shadow:0 0 16px rgba(246,159,9,.20);
+  margin-bottom:14px;
+}
+
+/* ---------- KAPCSOLATOK ---------- */
+.tessaTabs{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-bottom:16px;
+}
+.tessaTab{
+  flex:1 1 auto;
+  padding:8px 12px;
+  border-radius:999px;
+  background:rgba(255,255,255,.03);
+  border:1px solid var(--tessa-line);
+  color:var(--tessa-dim);
+  font-family:"Cormorant Garamond",serif;
+  font-size:13px;
+  cursor:pointer;
+  transition:border-color .2s ease,color .2s ease,background .2s ease;
+}
+.tessaTab:hover{border-color:var(--tessa-brass);color:var(--tessa-text);}
+.tessaTab.tessaActive{
+  background:rgba(246,159,9,.12);
+  border-color:var(--tessa-gold);
+  color:var(--tessa-text);
+}
+
+.tessaRelationBox{
+  display:flex;
+  gap:16px;
+  align-items:center;
+  padding:14px 16px;
+  background:rgba(4,7,11,.5);
+  border:1px solid var(--tessa-line);
+  border-radius:14px;
+  opacity:0;
+  transform:translateY(8px);
+  transition:opacity .3s ease,transform .3s ease;
+}
+.tessaRelationBox.tessaActive{opacity:1;transform:translateY(0);}
+
+.tessaEmblem{
+  flex:0 0 auto;
+  width:56px;height:56px;
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:radial-gradient(circle at 35% 30%,var(--em-glow,rgba(246,159,9,.35)),transparent 70%),var(--tessa-paper2);
+  border:1px solid var(--em-color,var(--tessa-gold));
+  box-shadow:0 0 14px var(--em-glow,rgba(246,159,9,.25));
+}
+.tessaEmblem svg{width:24px;height:24px;stroke:var(--em-color,var(--tessa-gold));fill:none;stroke-width:1.5;}
+
+.tessaRelationText{
+  font-size:14.5px;
+  line-height:1.55;
+  font-style:italic;
+  color:var(--tessa-dim);
+}
+
+/* ---------- ZENESZERZÉS ---------- */
+.tessaShelf{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+}
+.tessaPiece{
+  position:relative;
+  aspect-ratio:1/1;
+  padding:12px 10px;
+  border-radius:12px 12px 16px 16px;
+  background:rgba(4,7,11,.55);
+  border:1px solid var(--tessa-line);
+  cursor:pointer;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+}
+.tessaPiece:hover{transform:translateY(-3px);border-color:var(--tessa-brass);}
+.tessaPiece.tessaSelected{
+  border-color:var(--tessa-gold);
+  box-shadow:0 0 0 1px rgba(246,159,9,.4),0 10px 22px rgba(0,0,0,.5);
+}
+
+.tessaStaff{
+  position:relative;
+  height:46px;
+  margin-bottom:8px;
+  border-radius:4px;
+  background:rgba(255,255,255,.02);
+}
+.tessaStaffLine{
+  position:absolute;left:6%;right:6%;
+  height:1px;
+  background:rgba(184,148,93,.28);
+}
+.tessaStaffLine:nth-child(1){top:12%;}
+.tessaStaffLine:nth-child(2){top:34%;}
+.tessaStaffLine:nth-child(3){top:56%;}
+.tessaStaffLine:nth-child(4){top:78%;}
+
+.tessaNote{
+  position:absolute;
+  width:7px;height:6px;
+  border-radius:50%;
+  bottom:16px;
+  background:var(--note-color,#f69f09);
+  transform:rotate(-18deg);
+}
+.tessaNote::after{
+  content:"";
+  position:absolute;
+  right:-1px;bottom:2px;
+  width:1.4px;height:15px;
+  background:var(--note-color,#f69f09);
+  border-radius:1px;
+}
+.tessaNote1{left:22%;}
+.tessaNote2{left:48%;animation-delay:.35s !important;}
+.tessaNote3{left:74%;animation-delay:.7s !important;}
+
+/* hangértékek: negyed (alap), egész, fél, nyolcad */
+.tessaNote.tessaWhole{background:transparent;border:1.3px solid var(--note-color,#f69f09);}
+.tessaNote.tessaWhole::after{content:none;}
+.tessaNote.tessaHalf{background:transparent;border:1.3px solid var(--note-color,#f69f09);}
+.tessaNote.tessaEighth::before{
+  content:"";
+  position:absolute;
+  top:-13px;right:-3px;
+  width:5px;height:7px;
+  border-radius:0 70% 40% 0;
+  background:var(--note-color,#f69f09);
+  transform:rotate(10deg);
+}
+
+.tessaPieceName{
+  font-family:"My Soul",cursive;
+  font-size:20px;
+  line-height:1.25;
+  color:#f69f09;
+}
+
+/* mood animation families */
+@keyframes tessaDrift{0%{transform:translateY(0) translateX(0) rotate(-18deg);opacity:.5}50%{transform:translateY(-9px) translateX(3px) rotate(-14deg);opacity:1}100%{transform:translateY(0) translateX(0) rotate(-18deg);opacity:.5}}
+@keyframes tessaRise{0%{transform:translateY(6px);opacity:0}45%{opacity:1}100%{transform:translateY(-16px);opacity:0}}
+@keyframes tessaJitter{0%,100%{transform:translate(0,0) rotate(-18deg)}20%{transform:translate(-2px,-3px) rotate(-25deg)}40%{transform:translate(2px,2px) rotate(-9deg)}60%{transform:translate(-1px,-2px) rotate(-21deg)}80%{transform:translate(1px,3px) rotate(-13deg)}}
+@keyframes tessaFall{0%{transform:translateY(-9px);opacity:0}30%{opacity:1}100%{transform:translateY(13px);opacity:0}}
+@keyframes tessaSway{0%,100%{transform:translateX(-4px) rotate(-24deg)}50%{transform:translateX(4px) rotate(-10deg)}}
+@keyframes tessaMarch{0%{transform:translate(0,5px);opacity:0}30%{opacity:1}65%{transform:translate(6px,-9px);opacity:1}100%{transform:translate(12px,-17px);opacity:0}}
+@keyframes tessaFade{0%,100%{opacity:.15}50%{opacity:.75}}
+@keyframes tessaFlicker{0%,100%{opacity:1}45%{opacity:.25}60%{opacity:.85}75%{opacity:.35}}
+@keyframes tessaWaltz{0%{transform:translate(0,0) rotate(-18deg)}33%{transform:translate(5px,-7px) rotate(2deg)}66%{transform:translate(-4px,-3px) rotate(12deg)}100%{transform:translate(0,0) rotate(-18deg)}}
+@keyframes tessaEcho{0%{transform:translate(0,0);opacity:.4}25%{transform:translate(5px,-5px);opacity:1}50%{transform:translate(0,0);opacity:.4}75%{transform:translate(-5px,5px);opacity:1}100%{transform:translate(0,0);opacity:.4}}
+
+.tessaMood-calm .tessaNote{animation:tessaDrift 6s ease-in-out infinite;--note-color:#9fd1e8;}
+.tessaMood-anxious .tessaNote{animation:tessaJitter 1.9s ease-in-out infinite,tessaFlicker 1.4s ease-in-out infinite;--note-color:#e1382a;}
+.tessaMood-romantic .tessaNote{animation:tessaWaltz 3.2s ease-in-out infinite;--note-color:#7a2748;}
+.tessaMood-mourning .tessaNote{animation:tessaFall 5s linear infinite;--note-color:#8f9dc9;}
+.tessaMood-hopeful .tessaNote{animation:tessaRise 4s ease-in-out infinite;--note-color:#ffe6ac;}
+.tessaMood-comfort .tessaNote{animation:tessaSway 5.4s ease-in-out infinite;--note-color:#e8b979;}
+.tessaMood-triumphant .tessaNote{animation:tessaMarch 2.6s ease-in-out infinite;--note-color:#f6c453;}
+.tessaMood-distant .tessaNote{animation:tessaFade 4s ease-in-out infinite;--note-color:#9a958d;}
+.tessaMood-nostalgic{filter:sepia(.55);}
+.tessaMood-nostalgic .tessaNote{animation:tessaEcho 6s ease-in-out infinite;--note-color:#c99a5b;}
+
+/* ---------- ÜZENET ---------- */
+.tessaGenGrid{display:grid;gap:12px;}
+.tessaGenGrid input,.tessaGenGrid textarea{
+  background:rgba(4,7,11,.6);
+  border:1px solid var(--tessa-line);
+  border-radius:10px;
+  padding:10px 12px;
+  font-family:"Cormorant Garamond",serif;
+  font-size:14px;
+  color:var(--tessa-text);
+}
+.tessaGenGrid input:focus,.tessaGenGrid textarea:focus{outline:none;border-color:var(--tessa-gold);}
+.tessaGenGrid textarea{min-height:100px;resize:vertical;}
+
+.tessaPreview{
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+  text-align:left;
+  padding:14px;
+  background:rgba(4,7,11,.5);
+  border:1px solid var(--tessa-line);
+  border-radius:14px;
+  min-height:80px;
+}
+.tessaPreviewLeft{flex:0 0 auto;width:64px;display:flex;flex-direction:column;align-items:center;gap:4px;}
+.tessaPreviewIcon{width:60px;}
+.tessaPreviewPiece{font-family:"My Soul",cursive;font-size:12px;line-height:1.2;color:var(--tessa-brass);text-align:center;overflow-wrap:break-word;word-break:break-word;}
+.tessaPreviewText{display:flex;flex-direction:column;gap:4px;min-width:0;flex:1;}
+.tessaPreviewTitle{font-family:"Lavishly Yours",cursive;font-size:21px;color:var(--tessa-gold);overflow-wrap:break-word;word-break:break-word;}
+.tessaPreviewBody{font-size:14px;line-height:1.55;color:var(--tessa-orange);white-space:pre-line;overflow-wrap:break-word;word-break:break-word;}
+
+.tessaError{
+  display:none;
+  font-size:12.5px;
+  letter-spacing:.02em;
+  color:#ff8a72;
+  border:1px solid rgba(237,103,33,.4);
+  background:rgba(237,103,33,.08);
+  border-radius:8px;
+  padding:8px 12px;
+}
+.tessaError.tessaShow{display:block;}
+
+.tessaGenerateBtn{
+  justify-self:start;
+  background:rgba(246,159,9,.14);
+  border:1px solid var(--tessa-gold);
+  border-radius:999px;
+  padding:10px 22px;
+  font-family:"Cormorant Garamond",serif;
+  font-size:13px;
+  letter-spacing:.04em;
+  color:var(--tessa-text);
+  cursor:pointer;
+  transition:background .2s ease;
+}
+.tessaGenerateBtn:hover{background:rgba(246,159,9,.24);}
+
+.tessaOutput{min-height:90px;font-size:11.5px;color:var(--tessa-dim);}
+
+@media (max-width:480px){
+  .tessaShelf{gap:8px;}
+  .tessaHeading{font-size:26px;}
+}

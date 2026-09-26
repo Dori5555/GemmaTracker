@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<title>Tessa – Kapcsolati napló</title>
+<link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=My+Soul&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./tessa.css">
+</head>
+<body>
+
+<div class="tessaWrap">
+
+  <!-- KAPCSOLATOK -->
+  <div class="tessaCard">
+    <div class="tessaEyebrow">Tessa · napló</div>
+    <div class="tessaHeading">Milyennek látsz engem?</div>
+    <div class="tessaTabs" id="tessaTabs">
+      <button class="tessaTab tessaActive" data-cat="friend">Barát</button>
+      <button class="tessaTab" data-cat="enemy">Ellenség</button>
+      <button class="tessaTab" data-cat="family">Család</button>
+      <button class="tessaTab" data-cat="love">Szerelem</button>
+      <button class="tessaTab" data-cat="other">Egyéb</button>
+    </div>
+    <div class="tessaRelationBox" id="tessaRelationBox"></div>
+  </div>
+
+  <!-- ZENESZERZÉS -->
+  <div class="tessaCard">
+    <div class="tessaEyebrow">Tessa · napló</div>
+    <div class="tessaHeading">Szerezz nekem egy dallamot</div>
+    <div class="tessaShelf" id="tessaShelf"></div>
+  </div>
+
+  <!-- ÜZENET -->
+  <div class="tessaCard">
+    <div class="tessaEyebrow">Tessa · napló</div>
+    <div class="tessaHeading">Amit mondanál nekem</div>
+    <div class="tessaGenGrid">
+      <input id="tessaTitleInput" placeholder="Cím">
+      <textarea id="tessaTextInput" placeholder="Néhány sor arról, mit jelentek neked…"></textarea>
+
+      <div class="tessaPreview">
+        <div class="tessaPreviewLeft">
+          <div class="tessaPreviewIcon" id="tessaPreviewIcon"></div>
+          <div class="tessaPreviewPiece" id="tessaPreviewPiece">Válassz dallamot</div>
+        </div>
+        <div class="tessaPreviewText">
+          <div class="tessaPreviewTitle" id="tessaPreviewTitle">Cím</div>
+          <div class="tessaPreviewBody" id="tessaPreviewBody">Az üzenet itt fog megjelenni.</div>
+        </div>
+      </div>
+
+      <div class="tessaError" id="tessaError">Válassz egy dallamot, és tölts ki minden mezőt, mielőtt legenerálnád a kódot.</div>
+
+      <button class="tessaGenerateBtn" id="tessaGenerateBtn">Kód legenerálása</button>
+      <textarea id="tessaOutput" class="tessaOutput" readonly placeholder="Ide kerül a kész kód…"></textarea>
+    </div>
+  </div>
+
+</div>
+
+<script src="./tessa.js"></script>
+</body>
+</html>
